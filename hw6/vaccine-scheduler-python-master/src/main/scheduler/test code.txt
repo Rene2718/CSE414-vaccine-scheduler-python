@@ -1,0 +1,83 @@
+create_caregiver care_a 123Abc!@
+create_caregiver care_b 123Abc!@
+create_caregiver care_c 123Abc!@
+create_caregiver care_d 123Abc!@
+create_caregiver care_d 123Abc!@
+
+create_patient pat_a 123Abc!@
+create_patient pat_b 123Abc!@
+create_patient pat_c 123Abc!@
+create_patient pat_d 123Abc!@
+create_patient pat_d 123Abc!@
+
+
+login_caregiver care_a 123Abc!@
+upload_availability 11-28-2021
+upload_availability 11-30-2021
+upload_availability 12-01-2021
+upload_availability 12-02-2021
+
+logout
+login_caregiver care_b 123Abc!@
+upload_availability 11-28-2021
+upload_availability 11-30-2021
+upload_availability 12-01-2021
+logout
+login_caregiver care_c 123Abc!@
+upload_availability 11-28-2021
+upload_availability 11-30-2021
+upload_availability 12-05-2021
+logout
+
+login_caregiver care_d 123Abc!@
+upload_availability 11-28-2021
+upload_availability 11-30-2021
+upload_availability 12-01-2021
+upload_availability 12-02-2021
+upload_availability 12-03-2021
+
+add_doses vac_1 300
+add_doses vac_2 500
+add_doses vac_3 3
+add_doses vac_4 1
+add_doses vac_5 0
+
+add_doses vac_6 100
+
+show_appointments
+logout
+
+login_patient pat_e 123Abc!@
+search_caregiver_schedule 11-28-2021
+search_caregiver_schedule 11-29-2021
+search_caregiver_schedule 11-30-2021
+search_caregiver_schedule 12-01-2021
+
+reserve 11-28-2021 vac_4
+reserve 11-28-2021 vac_1
+reserve 11-30-2021 vac_1
+reserve 12-01-2021 vac_1
+reserve 12-02-2021 vac_1
+
+reserve 11-28-2021 vac_2
+
+show_appointments
+logout
+login_patient pat_b 123Abc!@
+
+search_caregiver_scheducle 11-30-2021
+reserve 12-01-2021 vac_3
+logout
+
+
+login_caregiver care_c 123Abc!@
+
+reserve 11-30-2021 vac_2
+show_appointments
+logout
+
+login_caregiver care_c 123Abc!@
+reserve 12-01-2021 vac_1
+
+show_appointments
+logout
