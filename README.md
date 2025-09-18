@@ -30,16 +30,16 @@ Developed as part of **CSE414: Introduction to Database Systems** coursework (HW
 
 ## Directory Structure
 
-- CSE414-vaccine-scheduler-python/
+CSE414-vaccine-scheduler-python/
 └── hw6/
-    └── vaccine-scheduler-python-master/
-        └── src/
-            └── main/
-                └── scheduler/
-                    ├── Scheduler.py      # Main entry point
-                    ├── model/            # Vaccine, Patient, Caregiver classes
-                    ├── db/               # Database connection manager
-                    └── util/             # Salt & hash utilities
+└── vaccine-scheduler-python-master/
+└── src/
+└── main/
+└── scheduler/
+├── Scheduler.py # Main entry point
+├── model/ # Vaccine, Patient, Caregiver classes
+├── db/ # Database connection manager
+└── util/ # Salt & hash utilities
 ---
 
 ## Usage
